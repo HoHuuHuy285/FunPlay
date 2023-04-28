@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
+
+	<title>Booking Form HTML Template</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="bookcar.css" />
+
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+    <!-- references: https://colorlib.com/wp/free-booking-form-templates/ -->
+	<header>
+		<a href="index.html" class="logo">MYDANANG</a>
+		<div id="menu-bar" class="fas fa-bars"></div>
+
+		<nav class="navbar">
+			<a href="#home">Home</a>
+			<a href="activities.html">Activities</a>
+			<a href="bookcar.html">Car Rental</a>
+			<a href="hotel.html">Hotel</a>
+
+		</nav>
+
+	</header>
+	<section class="home" id="home">
+
+        <div class="content">
+            <span>Da Nang</span>
+            <h3>The most worth visiting tourist city</h3>
+        </div>
+
+    </section>
+
+
+	<div name="myForm" id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="booking-form">
+                        <div class="booking-bg"></div>
+                        <form>
+                            <div class="form-header">
+                                <h2>Car Rental Service</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span id="receiv" class="form-label">Receiving Time</span>
+                                        <input class="form-control" type="date" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span id="pay" class="form-label">Payment Time</span>
+                                        <input class="form-control" type="date" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span id="segment" class="form-label">Car Segment</span>
+                                        <select class="form-control">
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>7</option>
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span id="auto" class="form-label">Automaker</span>
+                                        <select class="form-control">
+                                            <option>HUYNDAI</option>
+                                            <option>TOYOTA</option>
+                                            <option>KIA</option>
+                                            <option>AUDI</option>
+                                            <option>MERCEDES</option>
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="form-label">Email</span>
+                                <input id="email" class="form-control" type="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <span class="form-label">Phone</span>
+                                <input onchange="validateForm()" id="phone" class="form-control" type="tel"
+                                    placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-btn">
+                                <button onclick="Form()" type=Submit class="submit-btn">Book Now</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+
+	<footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="bottom">&copy;<span id="year"> </span></div>
+            
+
+
+        </div>
+        </div>
+    </footer>
+	<script>
+		// Function Check Allow Numberic for field Phone
+		function validateForm() {
+			var z = document.getElementById('phone').value;
+			if (!/^[0-9]+$/.test(z)) {
+				alert("Please only enter numeric characters only for your Age! (Allowed input:0-9)");
+				return false;
+			}
+	
+		}
+		function Form() {
+			var phone = document.getElementById('phone').value;
+			var email = document.getElementById('phone').value;
+			var pay = document.getElementById('phone').value;
+			var segment = document.getElementById('phone').value;
+			var receiv = document.getElementById('phone').value;
+			if (!/^[0-9]+$/.test(phone))  {
+				alert("Please only enter numeric characters only for your Age! (Allowed input:0-9)");
+				return false;
+			}
+			if (phone > 0 && email > 0 && pay > 0 && segment > 0 && receiv > 0)  {
+				alert("Order Success");
+			}
+		   
+		}
+	</script>
+	<script src="bookcar.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
