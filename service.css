@@ -5,7 +5,7 @@
   }
   
   * {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Permanent Marker', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -55,7 +55,7 @@
   }
   
   .heading h1 {
-    font-size: 4rem;
+    font-size: 2.75rem;
     color: #fff;
     padding-bottom: 1rem;
     text-transform: uppercase;
@@ -208,6 +208,15 @@
   
   .reviews .row .box-container .box img {
     height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    /* border: 2rem solid #fff; */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.9);
+  }
+
+  .reviews .row .box-container .box video {
+    height: 32rem;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
