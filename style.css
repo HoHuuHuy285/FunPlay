@@ -496,3 +496,33 @@ span {
   }
 
 }
+
+
+/* Imge */
+.images{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.images .image-box{
+  margin: 8px;
+}
+.images .image-box img{
+  height: 400px;
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.2s linear;
+}
+.image-box:hover img{
+  transform: scale(1.05);
+}
+.image-box h6{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
