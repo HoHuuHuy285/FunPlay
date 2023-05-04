@@ -1,16 +1,14 @@
 
-var people = []; // this is where var person was
-var sumbit = document.getElementById('Sumbit')
-sumbit.onclick = event_handler;
+const form = document.getElementById('contact-form');
 
+form.addEventListener('submit', callbackFunction);
+function callbackFunction(event) {
+    event.preventDefault();
+    const myFormData = new FormData(event.target);
 
-
-function event_handler () { // assuming the object gets populated as part of an event
-    people.push({
-        Name: document.getElementById('Name'),
-        Address: document.getElementById('Name')
-    });
-}
+    const formDataObj = Object.fromEntries(myFormData.entries());
+    console.log(formDataObj);
+};
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
