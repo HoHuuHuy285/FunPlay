@@ -435,4 +435,46 @@
   }
 
 
+
+  @media (max-width: 991px) {
+    header {
+      padding: 2rem 4%;
+    }
+  
+    section {
+      padding: 3rem 4%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    
+    .reviews .row {
+      flex-flow: column;
+    }
+  
+    .reviews .row .divider {
+      display: none;
+    }
+  
+    .reviews .row .box-container:last-child .box {
+      display: flex;
+      flex-flow: column-reverse;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+
+
+
   
