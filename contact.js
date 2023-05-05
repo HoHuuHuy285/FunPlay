@@ -1,15 +1,23 @@
+let movies = [];
+const addMovie = (ev)=>{
+    ev.preventDefault();  
+    let movie = {
+        id: Date.now(),
+        Name: document.getElementById('Name').value,
+        Phone: document.getElementById('Phone').value,
+        Email: document.getElementById('Email').value,
+        Message: document.getElementById('Message').value
+    }
+    movies.push(movie);
+    document.forms[0].reset(); 
 
-const form = document.getElementById('contact-form');
+    console.warn('added' , {movies} );
 
-form.addEventListener('submit', callbackFunction);
-function callbackFunction(event) {
-    event.preventDefault();
-    const myFormData = new FormData(event.target);
-
-    const formDataObj = Object.fromEntries(myFormData.entries());
-    console.log(formDataObj);
-};
-
+    localStorage.setItem('MyMovieList', JSON.stringify(movies) );
+}
+document.addEventListener('DOMContentLoaded', ()=>{
+    document.getElementById('btn').addEventListener('click', addMovie);
+});
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

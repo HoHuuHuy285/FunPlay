@@ -36,34 +36,28 @@
     <div class="row">
       <h4 style="text-align:center">We'd love to hear from you!</h4>
     </div>
-    <form class="row input-container " id=" contact-form ">
-      <div class="col-xs-12">
-        <div class="styled-input wide">
-          <input type="text" required name="Name" id="Name"/>
-          <label for="Name">Name</label>
-        </div>
+    <form class="row input-container ">
+      <div class="styled-input wide">
+          <input type="text" required id="Name"/>
+          <label for="title">Name</label>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="styled-input ">
-          <input type="text" required name="Email" />
-          <label for="Email">Email</label>
-        </div>
+      <div class="styled-input">
+          <input type="phone" required id="Phone" />
+          <label for="Phone">Phone</label>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="styled-input " style="float:right;">
-          <input type="text" required name="Phone" />
-          <label for="Phone">Phone Number</label>
-        </div>
+      <div class="styled-input" style="float:right;">
+        <input type="email" required id="Email" />
+        <label for="Email">Email</label>
+    </div>
+    <div class="styled-input wide">
+      <textarea required id="Message"></textarea>
+      <label>Message</label>
+    </div>
+      <div class="formBox">
+          <button class="col-xs-12 btn-lrg submit-btn" id="btn">Sumbit</button>
       </div>
-      <div class="col-xs-12">
-        <div class="styled-input wide">
-          <textarea required></textarea>
-          <label>Message</label>
-        </div>
-      </div>
-        <button type="submit" class="col-xs-12 btn-lrg submit-btn">Submit</button>
 
-    </form>
+  </form>
 </div>
     <footer>
       <div class="rowfooter">
