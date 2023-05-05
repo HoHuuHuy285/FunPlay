@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Permanent+Marker&display=swap');
 
 h1 {
 	font-weight: 600;
@@ -90,6 +91,7 @@ textarea {
 }
 
 .submit-btn {
+	font-family: 'Permanent Marker', cursive;
 	padding: 7px 35px;
 	border-radius: 60px;
 	display: inline-block;
@@ -125,8 +127,6 @@ input[type="checkbox"]:checked + label {
 	font-style: normal;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Permanent+Marker&display=swap');
 
 body {
   margin: 0;
